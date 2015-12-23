@@ -1,2 +1,9 @@
-h1 Home#index
-p Find me in app/views/home/index.html.slim
+h1 Twitter連携
+- if notice
+  p = notice
+
+- if session[:user]
+  .well = session[:user].to_json
+  =link_to 'ログアウト', '/auth/signout'
+- else
+  =link_to 'Twitterでログイン', '/auth/twitter'
