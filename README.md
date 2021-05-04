@@ -33,3 +33,7 @@ rails s
 ```
 
 Access `http://localhost:3000/`
+
+# 注意
+
+ツイッターのCallback URLに http://localhost:3000/auth/twitter/callback を設定する必要がある。
